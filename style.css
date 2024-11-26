@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e64545;
+    background-image: url('Natal.jpeg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+}
+
+.icons img {
+    width: 50px;
+    margin: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #e64545;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #001f3f; /* Cor de fundo azul escuro */
+    color: #fff;
+    text-align: center;
+    overflow: hidden; /* Evita barras de rolagem */
+}
+
+h1 {
+    margin-top: 20%;
+    font-size: 3rem;
+}
+
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    font-size: 2rem;
+    color: white;
+    animation: fall linear infinite;
+    opacity: 0.8;
+}
+
+/* Criar várias flocos de neve com tamanhos e velocidades diferentes */
+.snowflake:nth-child(1) { left: 10%; animation-duration: 5s; font-size: 1.5rem; }
+.snowflake:nth-child(2) { left: 30%; animation-duration: 7s; font-size: 2rem; }
+.snowflake:nth-child(3) { left: 50%; animation-duration: 6s; font-size: 1.8rem; }
+.snowflake:nth-child(4) { left: 70%; animation-duration: 8s; font-size: 2.2rem; }
+.snowflake:nth-child(5) { left: 85%; animation-duration: 4.5s; font-size: 1.6rem; }
+.snowflake:nth-child(6) { left: 95%; animation-duration: 5.5s; font-size: 1.7rem; }
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh) translateX(0);
+    }
+    100% {
+        transform: translateY(100vh) translateX(20px);
+    }
+}
